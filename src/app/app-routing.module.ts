@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EagerComponent } from './eager/eager.component';
 import { SimpleComponent } from './simple/simple.component';
 import { ObsSampleComponent } from './obs-sample/obs-sample.component';
+import { LifecyclesComponent } from './lifecycles/lifecycles.component';
 
 const routes: Routes = [  {
   path: 'directives',
@@ -29,8 +30,16 @@ const routes: Routes = [  {
   loadChildren: './testing/testing.module#TestingModule'
 },
 {
+  path: 'parent-child',
+  loadChildren: './parent-child/parent-child.module#ParentChildModule'
+},
+{
   path: 'eager',
   component: EagerComponent
+},
+{
+  path: 'life',
+  component: LifecyclesComponent
 },
 {
   path: 'simple',

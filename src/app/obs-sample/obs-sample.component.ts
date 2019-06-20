@@ -13,7 +13,7 @@ export class ObsSampleComponent implements OnInit {
 
   ngOnInit() {
     this.testObservable = of(1,2,3);
-    const squareValues = pipe(concatMap((x:any) => of(x * x).pipe(delay(1000),filter(x => x < 5))));
+    const squareValues = pipe(map((x:any) => x * x));
     const squaredNums = squareValues(this.testObservable);
     squaredNums.subscribe(result => {
       console.log(result);

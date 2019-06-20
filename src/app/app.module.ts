@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EagerComponent } from './eager/eager.component';
@@ -10,7 +9,6 @@ import { SimpleComponent } from './simple/simple.component';
 import { TestService } from './services/test.service';
 import { ObsSampleComponent } from './obs-sample/obs-sample.component';
 import { SampleComponent } from './ngrx/sample/sample.component';
-import { HostComponent } from './events/host/host.component';
 import { CommonModule } from '@angular/common';
 
 const routes = [
@@ -24,8 +22,7 @@ const routes = [
     LifecyclesComponent,
     SimpleComponent,
     ObsSampleComponent,
-    SampleComponent,
-    HostComponent
+    SampleComponent
   ],
   imports: [
     BrowserModule,
